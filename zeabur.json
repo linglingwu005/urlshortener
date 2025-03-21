@@ -1,0 +1,19 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "services": [
+    {
+      "name": "url-shortener",
+      "type": "web",
+      "env": {
+        "PORT": "3000"
+      },
+      "domains": [
+        {
+          "path": "/"
+        }
+      ]
+    }
+  ]
+}
